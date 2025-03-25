@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Alimenti</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: auto;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+            margin: 20px;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: white;
+            background: #ff6b6b;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .menu a:hover {
+            background: #ff4757;
+            transform: scale(1.1);
+            box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+        }
+
+        h1 {
+            font-family: 'Arial Black', sans-serif;
+            font-size: 2.5em;
+            color: #333;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+        }
+
+        .qr-code {
+            margin: 20px auto; /* Centra il QR code orizzontalmente */
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Menu Alimenti</h1>
+        <div class="menu">
+            <a href="#frutta">Frutta</a>
+            <a href="#verdura">Verdura</a>
+            <a href="#ortaggi">Ortaggi</a>
+            <a href="#cereali">Cereali</a>
+            <a href="#latticini">Latticini</a>
+        </div>
+        <div class="qr-code">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.example.com" alt="QR Code">
+        </div>
+    </div>
+</body>
+</html>
