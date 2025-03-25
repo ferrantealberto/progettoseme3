@@ -56,6 +56,25 @@
     p {
       font-size: 1.2rem;
       line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .cta-button {
+      padding: 12px 24px;
+      font-size: 1rem;
+      color: white;
+      background: rgba(255, 255, 255, 0.2);
+      border: 2px solid white;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .cta-button:hover {
+      background: rgba(255, 255, 255, 0.4);
+      transform: scale(1.05);
     }
 
     .info-box {
@@ -79,6 +98,11 @@
         font-size: 1rem;
       }
 
+      .cta-button {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+      }
+
       .info-box {
         font-size: 0.8rem;
         padding: 8px 16px;
@@ -91,6 +115,7 @@
   <div class="welcome-container">
     <h1>Benvenuto!</h1>
     <p>Siamo felici di averti qui. Esplora e scopri tutto ciò che abbiamo da offrire. Speriamo che la tua esperienza sia piacevole e memorabile.</p>
+    <a href="menu.html" class="cta-button">Scopri il Menu</a>
   </div>
   <div class="info-box" id="infoBox"></div>
 
